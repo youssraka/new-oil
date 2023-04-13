@@ -256,7 +256,9 @@ body {
   color: var(--brown);
   box-shadow: var(--shadow-2);
 }
-
+.close-btn{
+  cursor: pointer;
+}
 .has-scrollbar {
   display: flex;
   gap: 15px;
@@ -560,9 +562,10 @@ body {
 }
 
 .hero-card {
-  background-color: var(--light-gray);
+  /* background-color: var(--light-gray); */
   padding: 100px 15px;
   background-position: 50%;
+  height: 500px;
 }
 
 .hero-text {

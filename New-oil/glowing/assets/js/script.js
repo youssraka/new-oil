@@ -15,7 +15,17 @@ const addEventOnElem = function (elem, type, callback) {
     elem.addEventListener(type, callback);
   }
 }
+//Close button function 
+// const closeBtn = document.querySelectorAll('close-btn')
 
+function closeWindow(){
+  document.getElementById("panel").style.display = "none"
+}
+// const closeWelcome = function(){
+//   closeBtn.addEventListener('click' , function(){
+//   tocloseContainer.style.display = (tocloseContainer.style.display == 'none')
+//   })
+// }
 
 
 /**
