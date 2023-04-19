@@ -1,955 +1,1100 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New-oil-cosmetics</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New-oil-cosmetics</title>
-
-  <!-- 
+    <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/newoilcosmetics/Logos/NOCLOGO02.png" type="image/svg+xml">
+    <link
+      rel="shortcut icon"
+      href="./assets/newoilcosmetics/Logos/NOCLOGO02.png"
+      type="image/svg+xml"
+    />
 
-  <!-- 
+    <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- 
+    <!-- 
     - google font lin
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- 
+    <!-- 
     - preload images
   -->
-  <link rel="preload" as="image" href="./assets/newoilcosmetics/Logos/LOGOSMALL.png">
-  <link rel="logo" as="image" href="./assets/newoilcosmetics/25/3I4A9015.jpg">
-  <link rel="preload" as="image" href="./assets/newoilcosmetics/25/3I4A8802.jpg">
-  <link rel="preload" as="image" href="./assets/newoilcosmetics/25/3I4A8833.jpg">
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/newoilcosmetics/Logos/LOGOSMALL.png"
+    />
+    <link
+      rel="logo"
+      as="image"
+      href="./assets/newoilcosmetics/25/3I4A9015.jpg"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/newoilcosmetics/25/3I4A8802.jpg"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/newoilcosmetics/25/3I4A8833.jpg"
+    />
+  </head>
 
-</head>
-
-<body id="top">
-
-  <!-- 
+  <body id="top">
+    <!-- 
     - #HEADER
   -->
 
-  <header class="header">
-
-    <div class="alert">
-      <div id="panel" class="container">
-        <p class="alert-text">BIENVENUE SUR NOTRE SITE INTERNET </p>
-       <div class="close-btn" onclick="closeWindow()">  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
-          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-        </svg> </div>
-      </div>
-    </div>
-
-    <div class="header-top" data-header>
-      <div class="container">
-
-        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-          <span class="line line-1"></span>
-          <span class="line line-2"></span>
-          <span class="line line-3"></span>
-        </button>
-
-        <div class="input-wrapper">
-          <input type="search" name="search" placeholder="Search product" class="search-field">
-
-          <button class="search-submit" aria-label="search">
-            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
-          </button>
+    <header class="header">
+      <div class="alert">
+        <div id="panel" class="container">
+          <p class="alert-text">BIENVENUE SUR NOTRE SITE INTERNET</p>
+          <div class="close-btn" onclick="closeWindow()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-x-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+              />
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </div>
         </div>
-
-        <a href="#" class="logo">
-          <img src="./assets/newoilcosmetics/Logos/LOGOSMALL.png" width="300" height="40" alt="New-oil-cosmetics">
-        </a>
-
-        <div class="header-actions">
-
-          <button class="header-action-btn" aria-label="user">
-            <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
-          </button>
-
-          <button class="header-action-btn" aria-label="favourite item">
-            <ion-icon name="star-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
-
-            <span class="btn-badge">+</span>
-          </button>
-          <!-- Not Displayed  -->
-          <button class="header-action-btn" aria-label="cart item">
-            <data class="btn-text" value="0">0.00DH</data>
-
-            <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
-
-            <span class="btn-badge">0</span>
-          </button>
-
-        </div>
-
-        <nav class="navbar">
-          <ul class="navbar-list">
-
-            <li>
-              <a href="#home" class="navbar-link has-after">Home</a>
-            </li>
-
-            <li>
-              <a href="#collection" class="navbar-link has-after">Collections</a>
-            </li>
-
-            <li>
-              <a href="#shop" class="navbar-link has-after">Shop</a>
-            </li>
-
-            <li>
-              <a href="#offer" class="navbar-link has-after">Offers</a>
-            </li>
-
-          
-          </ul>
-        </nav>
-
       </div>
-    </div>
 
-  </header>
-  <!-- 
+      <div class="header-top" data-header>
+        <div class="container">
+          <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </button>
+
+          <div class="input-wrapper">
+            <input
+              type="search"
+              name="search"
+              placeholder="Search product"
+              class="search-field"
+              id="search-field"
+              data-search
+            />
+
+            <button class="search-submit" aria-label="search">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <a href="#" class="logo">
+            <img
+              src="./assets/newoilcosmetics/Logos/LOGOSMALL.png"
+              width="300"
+              height="40"
+              alt="New-oil-cosmetics"
+            />
+          </a>
+
+          <div class="header-actions">
+            <button class="header-action-btn" aria-label="user">
+              <ion-icon
+                name="person-outline"
+                aria-hidden="true"
+                aria-hidden="true"
+              ></ion-icon>
+            </button>
+
+            <button class="header-action-btn" aria-label="favourite item">
+              <ion-icon
+                name="star-outline"
+                aria-hidden="true"
+                aria-hidden="true"
+              ></ion-icon>
+
+              <span class="btn-badge">+</span>
+            </button>
+            <!-- Not Displayed  -->
+            <button class="header-action-btn" aria-label="cart item">
+              <data class="btn-text" value="0">0.00DH</data>
+
+              <ion-icon
+                name="bag-handle-outline"
+                aria-hidden="true"
+                aria-hidden="true"
+              ></ion-icon>
+
+              <span class="btn-badge">0</span>
+            </button>
+          </div>
+
+          <nav class="navbar">
+            <ul class="navbar-list">
+              <li>
+                <a href="#home" class="navbar-link has-after">Home</a>
+              </li>
+
+              <li>
+                <a href="#collection" class="navbar-link has-after"
+                  >Collections</a
+                >
+              </li>
+
+              <li>
+                <a href="#shop" class="navbar-link has-after">Shop</a>
+              </li>
+
+              <li>
+                <a href="#offer" class="navbar-link has-after">Offers</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- 
     - #MOBILE NAVBAR
   -->
 
-  <div class="sidebar">
-    <div class="mobile-navbar" data-navbar>
+    <div class="sidebar">
+      <div class="mobile-navbar" data-navbar>
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img
+              src="./assets/newoilcosmetics/Logos/LOGOSMALL.png"
+              width="250"
+              height="30"
+              alt="New-oil-cosmetics"
+            />
+          </a>
 
-      <div class="wrapper">
-        <a href="#" class="logo">
-          <img src="./assets/newoilcosmetics/Logos/LOGOSMALL.png" width="250" height="30" alt="New-oil-cosmetics">     
-        </a>
+          <button
+            class="nav-close-btn"
+            aria-label="close menu"
+            data-nav-toggler
+          >
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
 
-        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-        </button>
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#collection" class="navbar-link" data-nav-link
+              >Collections</a
+            >
+          </li>
+
+          <li>
+            <a href="#shop" class="navbar-link" data-nav-link>Shop</a>
+          </li>
+
+          <li>
+            <a href="#offer" class="navbar-link" data-nav-link>Offers</a>
+          </li>
+
+          <!-- <li>
+          <a href="#offer" class="navbar-link has-after">Search product</a>
+        </li> -->
+        </ul>
       </div>
 
-      <ul class="navbar-list">
-
-        <li>
-          <a href="#home" class="navbar-link" data-nav-link>Home</a>
-        </li>
-
-        <li>
-          <a href="#collection" class="navbar-link" data-nav-link>Collections</a>
-        </li>
-
-        <li>
-          <a href="#shop" class="navbar-link" data-nav-link>Shop</a>
-        </li>
-
-        <li>
-          <a href="#offer" class="navbar-link" data-nav-link>Offers</a>
-        </li>
-
-        <li>
-        </li>
-
-      </ul>
-
+      <div class="overlay" data-nav-toggler data-overlay></div>
     </div>
 
-    <div class="overlay" data-nav-toggler data-overlay></div>
-  </div>
-
-
-
-
-
-  <main>
-    <article>
-
-      <!-- 
+    <main>
+      <article>
+        <!-- 
         - #HERO
       -->
 
-      <section class="section hero" id="home" aria-label="hero" data-section>
-        <div class="container">
-
-          <ul class="has-scrollbar">
-
-            <li class="scrollbar-item"> 
-              <div class="hero-card has-bg-image" style="background-image: url('./assets/newoilcosmetics/25/01.png');">
-
-                <div class="card-content">
-
-                  <!-- <h1 class="h1 hero-title">
+        <section class="section hero" id="home" aria-label="hero" data-section>
+          <div class="container">
+            <ul class="has-scrollbar">
+              <li class="scrollbar-item">
+                <div
+                  class="hero-card has-bg-image"
+                  style="
+                    background-image: url('./assets/newoilcosmetics/25/13.png');
+                  "
+                >
+                  <div class="card-content">
+                    <!-- <h1 class="h1 hero-title">
                    New Oil  Cosmetics
                   </h1>
                   <p class="hero-text">
                     It's The best natural care for your skin.
-                  </p>
-                  <a href="#" class="btn btn-primary">Shop Now</a> -->
-
+                  </p>-->
+                    <a href="#shop" class="btn-1 btn-primary">Shop Now</a>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="hero-card has-bg-image" style="background-image: url('./assets/newoilcosmetics/25/3I4A8868.jpg')">
-
-                <div class="card-content">
-
-                  <h1 class="h1 hero-title">
+              <li class="scrollbar-item">
+                <div
+                  class="hero-card has-bg-image"
+                  style="
+                    background-image: url('./assets/newoilcosmetics/25/15.png');
+                  "
+                >
+                  <div class="card-content">
+                    <!-- <h1 class="h1 hero-title">
                     New Oil  Cosmetics
                   </h1>
                   <p class="hero-text">
                     It's The best natural care for your skin.
-                  </p>
-                  <a href="#" class="btn btn-primary">Shop Now</a>
-
+                  </p> -->
+                    <a href="#shop" class="btn-2 btn-primary">Shop Now</a>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="hero-card has-bg-image" style="background-image: url('./assets/newoilcosmetics/25/3I4A8924.jpg')">
-
-                <div class="card-content">
-
-                  <h1 class="h1 hero-title">
-                    New Oil  Cosmetics
-                  </h1>
-
-                  <p class="hero-text">
-                    It's The best natural care for your skin.
-                  </p>
-                  <a href="#" class="btn btn-primary">Shop Now</a>
+              <li class="scrollbar-item">
+                <div
+                  class="hero-card has-bg-image"
+                  style="
+                    background-image: url('./assets/newoilcosmetics/25/14.png');
+                  "
+                >
+                  <div class="card-content">
+                    <a href="#shop" class="btn-0 btn-primary">Shop Now</a>
+                  </div>
                 </div>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
+        <!-- 
         - #COLLECTION
       -->
 
-      <section class="section collection" id="collection" aria-label="collection" data-section>
-        <div class="container">
+        <section
+          class="section collection"
+          id="collection"
+          aria-label="collection"
+          data-section
+        >
+          <div class="container">
+            <ul class="collection-list">
+              <li>
+                <div class="collection-card has-before hover:shine">
+                  <h2 class="h2 card-title">HUILE D'ARGAN</h2>
 
-          <ul class="collection-list">
+                  <p class="card-text">Huile BIO</p>
 
-            <li>
-              <div class="collection-card has-before hover:shine">
+                  <a href="#" class="btn-link">
+                    <div class="bg-span">
+                      <span class="span">Discover Now</span>
+                    </div>
 
-                <h2 class="h2 card-title">HUILE D'ARGAN</h2>
+                    <!-- <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon> -->
+                  </a>
 
-                <p class="card-text">Huile BIO </p>
+                  <div
+                    class="has-bg-image"
+                    style="
+                      background-image: url('./assets/newoilcosmetics/25/3I4A9018.jpg');
+                    "
+                  ></div>
+                </div>
+              </li>
 
-                <a href="#" class="btn-link">
-                  <div class="bg-span"> <span class="span">Discover Now</span> </div>
+              <li>
+                <div class="collection-card has-before hover:shine">
+                  <h2 class="h2 card-title">What’s New?</h2>
 
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </a>
+                  <p class="card-text">HUILE DE RICIN</p>
 
-                <div class="has-bg-image" style="background-image: url('./assets/newoilcosmetics/25/3I4A9018.jpg')"></div>
+                  <a href="#" class="btn-link">
+                    <div class="bg-span">
+                      <span class="span">Discover Now</span>
+                    </div>
 
-              </div>
-            </li>
+                    <!-- <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon> -->
+                  </a>
 
-            <li>
-              <div class="collection-card has-before hover:shine">
+                  <div
+                    class="has-bg-image"
+                    style="
+                      background-image: url('./assets/newoilcosmetics/25/3I4A8833.jpg');
+                    "
+                  ></div>
+                </div>
+              </li>
 
-                <h2 class="h2 card-title">What’s New?</h2>
+              <li>
+                <div class="collection-card has-before hover:shine">
+                  <h2 class="h2 card-title">New Collection</h2>
 
-                <p class="card-text">HUILE  DE RICIN</p>
+                  <p class="card-text">Huiles Bio à partir de 120.00dh</p>
 
-                <a href="#" class="btn-link">
-                <div class="bg-span"> <span class="span">Discover Now</span> </div>
+                  <a href="#" class="btn-link">
+                    <div class="bg-span">
+                      <span class="span">Discover Now</span>
+                    </div>
 
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </a>
+                    <!-- <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon> -->
+                  </a>
 
-                <div class="has-bg-image" style="background-image: url('./assets/newoilcosmetics/25/3I4A8833.jpg')"></div>
+                  <div
+                    class="has-bg-image"
+                    style="
+                      background-image: url('./assets/newoilcosmetics/25/3I4A9030.jpg');
+                    "
+                  ></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-              </div>
-            </li>
-
-            <li>
-              <div class="collection-card has-before hover:shine">
-
-                <h2 class="h2 card-title">New Collection</h2>
-
-                <p class="card-text"> Huiles Bio à partir de 120.00dh</p>
-
-                <a href="#" class="btn-link">
-
-                  <div class="bg-span"> <span class="span">Discover Now</span> </div>
-
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </a>
-
-                <div class="has-bg-image" style="background-image: url('./assets/newoilcosmetics/25/3I4A9030.jpg')"></div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
+        <!-- 
         - #SHOP
       -->
 
-      <section class="section shop" id="shop" aria-label="shop" data-section>
-        <div class="container">
+        <section class="section shop" id="shop" aria-label="shop" data-section>
+          <div class="container">
+            <div class="title-wrapper">
+              <h2 class="h2 section-title">Our Products</h2>
+            </div>
+
+            <ul class="has-scrollbar">
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/newoilcosmetics/Argan-gal.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Facial cleanser"
+                      class="img-cover"
+                    />
 
-          <div class="title-wrapper">
-            <h2 class="h2 section-title"> Our Oils </h2>
-          </div>
-
-          <ul class="has-scrollbar">
-
-            <li class="scrollbar-item">
-              <div class="shop-card">
-
-                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/newoilcosmetics/Argan-gal.jpg" width="540" height="720" loading="lazy"
-                    alt="Facial cleanser" class="img-cover">
-
-                  <span class="badge" aria-label="20% off">-20%</span>
-
-                  <div class="card-actions">
-
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to whishlist">
-                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                  </div>
-                </div>
-
-                <div class="card-content">
-
-                  <div class="price">
-                    <del class="del">200.00 DH</del>
-
-                    <span class="span">160.00 DH</span>
-                  </div>
-
-                  <h3>
-                    <a href="#" class="card-title">HUILE D'ARGAN</a>
-                  </h3>
-
-                  <div class="card-rating">
-
-                    <div class="rating-wrapper" aria-label="5 start rating">
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    </div>
-
-                    <p class="rating-text">5170 reviews</p>
-
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="shop-card">
-
-                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/newoilcosmetics/amande-gal.jpg" width="540" height="720" loading="lazy"
-                    alt="Bio-shroom Rejuvenating Serum" class="img-cover">
-
-                  <div class="card-actions">
-
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to whishlist">
-                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                  </div>
-                </div>
-
-                <div class="card-content">
-
-                  <div class="price">
-                    <span class="span">120.00 DH</span>
-                  </div>
-
-                  <h3>
-                    <a href="#" class="card-title">HUILE D'AMANDE AMÈRE</a>
-                  </h3>
-
-                  <div class="card-rating">
-                                            <!-- rating stars -->
-
-                    <div class="rating-wrapper" aria-label="5 start rating">
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    </div>
-
-                    <p class="rating-text">2170 reviews</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="shop-card">
-
-                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/newoilcosmetics/Figue-gal.jpg" width="540" height="720" loading="lazy"
-                    alt="figue-huile" class="img-cover">
-
-                  <div class="card-actions">
-
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to whishlist">
-                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                  </div>
-                </div>
-
-                <div class="card-content">
-
-                  <div class="price">
-                    <span class="span">260.00 DH</span>
-                  </div>
-
-                  <h3>
-                    <a href="#" class="card-title">HUILE DE PEPIN DE FIGUE DE BARBARIE</a>
-                  </h3>
-                  <div class="card-rating">
-                    <!-- rating stars -->
-                    <div class="rating-wrapper" aria-label="5 start rating">
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    </div>
-                    <p class="rating-text">4129 reviews</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="scrollbar-item">
-              <div class="shop-card">
-
-                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/newoilcosmetics/Chanvre-gal.jpg" width="540" height="720" loading="lazy"
-                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
-
-                  <span class="badge" aria-label="20% off">-20%</span>
-
-                  <div class="card-actions">
-
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to whishlist">
-                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                  </div>
-                </div>
-
-                <div class="card-content">
-
-                  <div class="price">
-                    <del class="del">320.00 DH</del>
-
-                    <span class="span">220.00 DH</span>
-                  </div>
-
-                  <h3>
-                    <a href="#" class="card-title">HUILE DE CHANVRE</a>
-                  </h3>
-
-                  <div class="card-rating">
-
-                    <div class="rating-wrapper" aria-label="5 start rating">
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    </div>
-
-                    <p class="rating-text">2300 reviews</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-          </ul>
-
-        </div>
-      </section>
-
-      <section class="section shop" id="shop" aria-label="shop" data-section>
-        <div class="container">
-
-          <div class="title-wrapper">
-            <h2 class="h2 section-title">Under $25</h2>
-          </div>
-
-          <ul class="has-scrollbar">
-
-            <li class="scrollbar-item">
-              <div class="shop-card">
-
-                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/newoilcosmetics/Ricin-gal.jpg" width="540" height="720" loading="lazy"
-                    alt="Facial cleanser" class="img-cover">
-
-                  <span class="badge" aria-label="20% off">-20%</span>
-
-                  <div class="card-actions">
-
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to whishlist">
-                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                  </div>
-                </div>
-
-                <div class="card-content">
-
-                  <div class="price">
-                    <del class="del">180.00 DH</del>
-
-                    <span class="span">130.00 DH</span>
-                  </div>
-
-                  <h3>
-                    <a href="#" class="card-title">
-
-                      HUILE DE RICIN</a>
-                  </h3>
-
-                  <div class="card-rating">
-
-                    <div class="rating-wrapper" aria-label="5 start rating">
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    </div>
-
-                    <p class="rating-text">321 reviews</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="shop-card">
-
-                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/newoilcosmetics/Lentisque-gal.jpg" width="540" height="720" loading="lazy"
-                    alt="Bio-shroom Rejuvenating Serum" class="img-cover">
-
-                  <div class="card-actions">
-
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to whishlist">
-                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                  </div>
-                </div>
-
-                <div class="card-content">
-
-                  <div class="price">
-                    <span class="span">150.00 DH</span>
-                  </div>
-
-                  <h3>
-                    <a href="#" class="card-title">HUILE LENTISQUE</a>
-                  </h3>
-
-                  <div class="card-rating">
-
-                    <div class="rating-wrapper" aria-label="5 start rating">
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    </div>
-
-                    <p class="rating-text">441 reviews</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-            <li class="scrollbar-item">
-              <div class="shop-card">
-
-                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/newoilcosmetics/Myrte-gal.jpg" width="540" height="720" loading="lazy"
-                    alt="Facial cleanser" class="img-cover">
-
-                  <div class="card-actions">
-
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to whishlist">
-                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                  </div>
-                </div>
-
-                <div class="card-content">
-
-                  <div class="price">
-                    <span class="span">150.00 DH</span>
-                  </div>
-
-                  <h3>
-                    <a href="#" class="card-title">HUILE DE MYRTE</a>
-                  </h3>
-
-                  <div class="card-rating">
-
-                    <div class="rating-wrapper" aria-label="5 start rating">
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    </div>
-
-                    <p class="rating-text">851 reviews</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-            <li class="scrollbar-item">
-              <div class="shop-card">
-
-                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/newoilcosmetics/Abricot-gal.jpg" width="540" height="720" loading="lazy"
-                    alt="Facial cleanser" class="img-cover">
                     <span class="badge" aria-label="20% off">-20%</span>
-                        
-                  <div class="card-actions">
 
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
 
-                    <button class="action-btn" aria-label="add to whishlist">
-                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    </button>
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
 
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
                   </div>
-                </div>
 
-                <div class="card-content">
+                  <div class="card-content">
+                    <div class="price">
+                      <del class="del">200.00 DH</del>
 
-                  <div class="price">
-                    <del class="del">180.00 DH</del>
-
-                    <span class="span">120.00 DH</span>
-                  </div>
-
-                  <h3>
-                    <a href="#" class="card-title">HUILE D'ABRICOT</a>
-                  </h3>
-
-                  <div class="card-rating">
-
-                    <div class="rating-wrapper" aria-label="5 start rating">
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <span class="span">160.00 DH</span>
                     </div>
 
-                    <p class="rating-text">642 reviews</p>
+                    <h3>
+                      <a href="#" class="card-title">HUILE D'ARGAN</a>
+                    </h3>
 
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">5170 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/newoilcosmetics/amande-gal.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Bio-shroom Rejuvenating Serum"
+                      class="img-cover"
+                    />
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
                   </div>
 
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">120.00 DH</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">HUILE D'AMANDE AMÈRE</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <!-- rating stars -->
+
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">2170 reviews</p>
+                    </div>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/newoilcosmetics/Figue-gal.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="figue-huile"
+                      class="img-cover"
+                    />
 
-          </ul>
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
 
-        </div>
-      </section>
-      <!-- 
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">260.00 DH</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title"
+                        >HUILE DE PEPIN DE FIGUE DE BARBARIE</a
+                      >
+                    </h3>
+                    <div class="card-rating">
+                      <!-- rating stars -->
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+                      <p class="rating-text">4129 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/newoilcosmetics/Chanvre-gal.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Coffee Bean Caffeine Eye Cream"
+                      class="img-cover"
+                    />
+
+                    <span class="badge" aria-label="20% off">-20%</span>
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <del class="del">320.00 DH</del>
+
+                      <span class="span">220.00 DH</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">HUILE DE CHANVRE</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">2300 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section shop" id="shop" aria-label="shop" data-section>
+          <div class="container">
+            <div class="title-wrapper">
+              <h2 class="h2 section-title">Under $25</h2>
+            </div>
+
+            <ul class="has-scrollbar">
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/newoilcosmetics/Ricin-gal.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Facial cleanser"
+                      class="img-cover"
+                    />
+
+                    <span class="badge" aria-label="20% off">-20%</span>
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <del class="del">180.00 DH</del>
+
+                      <span class="span">130.00 DH</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title"> HUILE DE RICIN</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">321 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/newoilcosmetics/Lentisque-gal.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Bio-shroom Rejuvenating Serum"
+                      class="img-cover"
+                    />
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">150.00 DH</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">HUILE LENTISQUE</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">441 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/newoilcosmetics/Myrte-gal.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Facial cleanser"
+                      class="img-cover"
+                    />
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">150.00 DH</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">HUILE DE MYRTE</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">851 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/newoilcosmetics/Abricot-gal.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Facial cleanser"
+                      class="img-cover"
+                    />
+                    <span class="badge" aria-label="20% off">-20%</span>
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <del class="del">180.00 DH</del>
+
+                      <span class="span">120.00 DH</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">HUILE D'ABRICOT</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">642 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- 
         - #BANNER
       -->
 
-      <section class="section banner" aria-label="banner" data-section>
-        <div class="container">
+        <section class="section banner" aria-label="banner" data-section>
+          <div class="container">
+            <ul class="banner-list">
+              <li>
+                <div class="banner-card banner-card-1 has-before hover:shine">
+                  <p class="card-subtitle">New Collection</p>
 
-          <ul class="banner-list">
+                  <h2 class="h2 card-title">Discover skincare products</h2>
 
-            <li>
-              <div class="banner-card banner-card-1 has-before hover:shine">
+                  <a href="details.html" class="btn btn-secondary"
+                    >Explore More</a
+                  >
 
-                <p class="card-subtitle">New Collection</p>
+                  <div
+                    class="has-bg-image"
+                    style="
+                      background-image: url('./assets/images/banner-1.jpg');
+                    "
+                  ></div>
+                </div>
+              </li>
 
-                <h2 class="h2 card-title">Discover skincare products</h2>
+              <li>
+                <div class="banner-card banner-card-2 has-before hover:shine">
+                  <h2 class="h2 card-title">20% off Everything</h2>
 
-                <a href="#" class="btn btn-secondary">Explore More</a>
+                  <p class="card-text"></p>
 
-                <div class="has-bg-image" style="background-image: url('./assets/images/banner-1.jpg')"></div>
+                  <a href="#" class="btn btn-secondary">Shop Sale</a>
 
-              </div>
-            </li>
+                  <div
+                    class="has-bg-image"
+                    style="
+                      background-image: url('./assets/newoilcosmetics/25/3I4A9053.jpg');
+                    "
+                  ></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-            <li>
-              <div class="banner-card banner-card-2 has-before hover:shine">
-
-                <h2 class="h2 card-title">20% off Everything</h2>
-
-                <p class="card-text">
-                 
-                </p>
-
-                <a href="#" class="btn btn-secondary">Shop Sale</a>
-
-                <div class="has-bg-image" style="background-image: url('./assets/newoilcosmetics/25/3I4A9053.jpg')"></div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
+        <!-- 
         - #FEATURE
       -->
 
-      <section class="section feature" aria-label="feature" data-section>
-        <div class="container">
+        <section class="section feature" aria-label="feature" data-section>
+          <div class="container">
+            <h2 class="h2-large section-title">
+              Why Shop from New oil Cosmetics ?
+            </h2>
 
-          <h2 class="h2-large section-title">Why Shop from New oil Cosmetics ?</h2>
+            <ul class="flex-list">
+              <li class="flex-item">
+                <div class="feature-card">
+                  <img
+                    src="./assets/images/feature-1.jpg"
+                    width="204"
+                    height="236"
+                    loading="lazy"
+                    alt="Guaranteed PURE"
+                    class="card-icon"
+                  />
 
-          <ul class="flex-list">
+                  <h3 class="h3 card-title">Guaranteed PURE</h3>
 
-            <li class="flex-item">
-              <div class="feature-card">
+                  <p class="card-text">
+                    All Grace formulations adhere to strict purity standards and
+                    will never contain harsh or toxic ingredients
+                  </p>
+                </div>
+              </li>
 
-                <img src="./assets/images/feature-1.jpg" width="204" height="236" loading="lazy" alt="Guaranteed PURE"
-                  class="card-icon">
+              <li class="flex-item">
+                <div class="feature-card">
+                  <img
+                    src="./assets/images/feature-2.jpg"
+                    width="204"
+                    height="236"
+                    loading="lazy"
+                    alt="Completely Cruelty-Free"
+                    class="card-icon"
+                  />
 
-                <h3 class="h3 card-title">Guaranteed PURE</h3>
+                  <h3 class="h3 card-title">Completely Cruelty-Free</h3>
 
-                <p class="card-text">
-                  All Grace formulations adhere to strict purity standards and will never contain harsh or toxic
-                  ingredients
-                </p>
+                  <p class="card-text">No testing on animals or humans</p>
+                </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="flex-item">
+                <div class="feature-card">
+                  <img
+                    src="./assets/images/feature-3.jpg"
+                    width="204"
+                    height="236"
+                    loading="lazy"
+                    alt="Ingredient Sourcing"
+                    class="card-icon"
+                  />
 
-            <li class="flex-item">
-              <div class="feature-card">
+                  <h3 class="h3 card-title">Ingredient Sourcing</h3>
 
-                <img src="./assets/images/feature-2.jpg" width="204" height="236" loading="lazy"
-                  alt="Completely Cruelty-Free" class="card-icon">
+                  <p class="card-text">
+                    Completely natuarl ingredients , from nature to your
+                    possession
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-                <h3 class="h3 card-title">Completely Cruelty-Free</h3>
-
-                <p class="card-text">
-                  No testing on animals or humans 
-                </p>
-
-              </div>
-            </li>
-
-            <li class="flex-item">
-              <div class="feature-card">
-
-                <img src="./assets/images/feature-3.jpg" width="204" height="236" loading="lazy"
-                  alt="Ingredient Sourcing" class="card-icon">
-
-                <h3 class="h3 card-title">Ingredient Sourcing</h3>
-
-                <p class="card-text">
-                  Completely natuarl ingredients , from nature to your possession 
-                </p>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
+        <!-- 
         - #OFFER
       -->
 
-      <section class="section offer" id="offer" aria-label="offer" data-section>
-        <div class="container">
+        <section
+          class="section offer"
+          id="offer"
+          aria-label="offer"
+          data-section
+        >
+          <div class="container">
+            <figure class="offer-banner">
+              <img
+                src="./assets/newoilcosmetics/25/3I4A89244.jpg"
+                width="450"
+                height="625"
+                loading="lazy"
+                alt="offer products"
+                class="w-100"
+              />
 
-          <figure class="offer-banner">
-            <img src="./assets/newoilcosmetics/25/3I4A89244.jpg" width="450" height="625" loading="lazy" alt="offer products"
-              class="w-100">
+              <video
+                src="./assets/newoilcosmetics/d209be9308d13d1b9ea1ebc026ff9710.mp4"
+                autoplay
+                muted
+                controls
+                width="300"
+                height="375"
+                loading="lazy"
+                alt="offer products"
+                class="w-100"
+              ></video>
+            </figure>
+            <div class="offer-content">
+              <p class="offer-subtitle">
+                <span class="span">Special Offer</span>
 
-            <video src="./assets/newoilcosmetics/d209be9308d13d1b9ea1ebc026ff9710.mp4" autoplay muted controls width="450" height="625" loading="lazy" alt="offer products"
-              class="w-100">
-          </figure>
+                <span class="badge" aria-label="20% off">-20%</span>
+              </p>
 
-          <div class="offer-content">
+              <h2 class="h2-large section-title">HUILE D'ABRICOT</h2>
 
-            <p class="offer-subtitle">
-              <span class="span">Special Offer</span>
+              <p class="section-text">
+                Made using natural, non-toxic ingredients, our products are
+                designed for everyone.
+              </p>
 
-              <span class="badge" aria-label="20% off">-20%</span>
-            </p>
+              <div class="countdown">
+                <span class="time" aria-label="days">15</span>
+                <span class="time" aria-label="hours">21</span>
+                <span class="time" aria-label="minutes">46</span>
+                <span class="time" aria-label="seconds">08</span>
+              </div>
 
-            <h2 class="h2-large section-title">
-              HUILE D'ABRICOT</h2>
-
-            <p class="section-text">
-              Made using natural, non-toxic ingredients, our products are designed for everyone.
-            </p>
-
-            <div class="countdown">
-
-              <span class="time" aria-label="days">15</span>
-              <span class="time" aria-label="hours">21</span>
-              <span class="time" aria-label="minutes">46</span>
-              <span class="time" aria-label="seconds">08</span>
-
+              <a href="#" class="btn btn-primary">Get It Only For 130.00 DH</a>
             </div>
-
-            <a href="#" class="btn btn-primary">Get It Only For 130.00 DH</a>
-
           </div>
+        </section>
 
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
+        <!-- 
         - #BLOG
       -->
 
-      <!--<section class="section blog" id="blog" aria-label="blog" data-section>
+        <!--<section class="section blog" id="blog" aria-label="blog" data-section>
         <div class="container">
 
           <h2 class="h2-large section-title">More to Discover</h2>
@@ -1023,105 +1168,127 @@
 
         </div>
       </section>-->
+      </article>
+    </main>
 
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
+    <!-- 
     - #FOOTER
   -->
 
-  <footer class="footer" data-section>
-    <div class="container">
-
-      <div class="footer-top">
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">About us</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Hay Adil Rue 9 n° 18, Hay Mohammadi Casablanca – Maroc</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">contact@newoilcosmetics.com</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link"> +212 5 22 60 94 42</a>
-          </li>
-        </ul>
-
-        <div class="footer-list">
-
-          <p class="newsletter-title">Receive news from us.</p>
-
-          <p class="newsletter-text">
-            Enter your email below to be the first to know about our new collections and product launches.
-          </p>
-
-          <form action="" class="newsletter-form" >
-            <input type="email" name="email_address" placeholder="Enter your email address" required
-              class="email-field" >
-
-            <button type="submit" class="btn btn-primary">Subscribe</button>
-          </form>
-
-        </div>
-
-      </div>
-
-      <div class="footer-bottom">
-
-        <div class="wrapper">
-          <p class="copyright">
-            &copy;2033 Newoilcosmetics
-          </p>
-
-          <ul class="social-list">
+    <footer class="footer" data-section>
+      <div class="container">
+        <div class="footer-top">
+          <ul class="footer-list">
             <li>
-              <a href="https://www.facebook.com/newoilcosmetics/" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
+              <p class="footer-list-title">About us</p>
             </li>
+
             <li>
-              <a href="https://www.instagram.com/newoilcosmetics/" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
+              <a href="#" class="footer-link"
+                >Hay Adil Rue 9 n° 18, Hay Mohammadi Casablanca – Maroc</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">contact@newoilcosmetics.com</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"> +212 5 22 60 94 42</a>
             </li>
           </ul>
+
+          <div class="footer-list">
+            <p class="newsletter-title">Receive news from us.</p>
+
+            <p class="newsletter-text">
+              Enter your email below to be the first to know about our new
+              collections and product launches.
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input
+                type="email"
+                name="email_address"
+                placeholder="Enter your email address"
+                required
+                class="email-field"
+              />
+
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
         </div>
-        <a href="#" class="logo">
-          <img src="./assets/newoilcosmetics/Logos/purebrown.png" width="179" height="26" loading="lazy" alt="Glowing">
-        </a>
-        <img src="./assets/images/pay.png" width="313" height="28" alt="available all payment method" class="w-100">
+
+        <div class="footer-bottom">
+          <div class="wrapper">
+            <p class="copyright">&copy; 2033 Newoilcosmetics</p>
+
+            <ul class="social-list">
+              <li>
+                <a
+                  href="https://www.facebook.com/newoilcosmetics/"
+                  class="social-link"
+                >
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/newoilcosmetics/"
+                  class="social-link"
+                >
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="logo">
+            <img
+              src="./assets/newoilcosmetics/Logos/purebrown.png"
+              width="179"
+              height="26"
+              loading="lazy"
+              alt="Glowing"
+            />
+          </a>
+          <img
+            src="./assets/images/pay.png"
+            width="313"
+            height="28"
+            alt="available all payment method"
+            class="w-100"
+          />
+        </div>
       </div>
-    </div>
-  </footer>
-  <!-- 
+    </footer>
+    <!-- 
     - #BACK TO TOP
   -->
 
-  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
-    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
-  </a>
-  <!-- 
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+    <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
 
-  <!-- 
+    <!-- 
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

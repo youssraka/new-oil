@@ -32,7 +32,7 @@
   --black_5: hsla(0, 0%, 0%, 0.05);
   --white: hsl(0, 0%, 100%);
   --pitch-black: hsl(0, 0%, 0%);
-  --brown: hsl(29, 64%, 15%);
+  --brown: hsl(12, 29%, 31%);
   --white-light: hsl(0, 0%, 100%);
   --green-lighter: hsla(91, 97%, 15%, 0.941);
   --brown-lighter: hsl(28, 100%, 29%);
@@ -239,6 +239,43 @@ body {
   padding: 10px 30px;
   border-radius: var(--radius-3);
   transition: var(--transition-1);
+  /* margin-top: 250px;
+  margin-left: 100px; */
+}
+.btn-0 {
+  font-weight: var(--fw-600);
+  max-width: max-content;
+  padding: 10px 30px;
+  border-radius: var(--radius-3);
+  transition: var(--transition-1);
+  margin-top: 210px;
+  margin-left: 200px;
+}
+.btn-1 {
+  font-weight: var(--fw-600);
+  max-width: max-content;
+  padding: 10px 30px;
+  border-radius: var(--radius-3);
+  transition: var(--transition-1);
+  margin-top: 210px;
+  margin-left: 250px;
+}
+.btn-2 {
+  font-weight: var(--fw-600);
+  max-width: max-content;
+  padding: 10px 30px;
+  border-radius: var(--radius-3);
+  transition: var(--transition-1);
+  margin-top: 190px;
+  margin-left: 130px;
+}
+.btn-3 {
+  font-weight: var(--fw-600);
+  max-width: max-content;
+  padding: 10px 30px;
+  border-radius: var(--radius-3);
+  transition: var(--transition-1);
+  margin-top: 25px;
 }
 
 .btn-primary,
@@ -256,7 +293,7 @@ body {
   color: var(--brown);
   box-shadow: var(--shadow-2);
 }
-.close-btn{
+.close-btn {
   cursor: pointer;
 }
 .has-scrollbar {
@@ -605,7 +642,6 @@ body {
   padding-block-end: 30px;
   display: flex;
   flex-direction: column;
-
   justify-content: center;
 }
 
@@ -1513,4 +1549,32 @@ body {
   .offer .container {
     gap: 120px;
   }
+}
+/**
+* Details page CSS
+**/
+.m-a-container {
+  width: 80%;
+  /* border: 1px red solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 30px;
+  padding: 10px;
+}
+.article-container {
+  display: flex;
+  margin-left: 20px;
+}
+.child-article-container > .header-article {
+  margin-left: 30px;
+  color: #65973f;
+}
+.article-container > .random-txt {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #262626d6;
+  font-size: 1.7rem;
 }

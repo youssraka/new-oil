@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À props ' nom article '</title>
+    <link
+    rel="shortcut icon"
+    href="./assets/newoilcosmetics/Logos/NOCLOGO02.png"
+    type="image/svg+xml"
+  />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body id="top">
+    <!-- 
+      - #HEADER
+    -->
+    <header class="header">
+      <div class="alert">
+        <div id="panel" class="container">
+          <p class="alert-text">BIENVENUE SUR NOTRE SITE INTERNET</p>
+          <div class="close-btn" onclick="closeWindow()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-x-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+              />
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-top" data-header>
+        <div class="container">
+          <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </button>
+
+          <div class="input-wrapper">
+            <input
+              type="search"
+              name="search"
+              placeholder="Search product"
+              class="search-field"
+              id="search-field"
+              data-search
+            />
+
+            <button class="search-submit" aria-label="search">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <a href="#" class="logo">
+            <img
+              src="./assets/newoilcosmetics/Logos/LOGOSMALL.png"
+              width="300"
+              height="40"
+              alt="New-oil-cosmetics"
+            />
+          </a>
+
+          <div class="header-actions">
+            <button class="header-action-btn" aria-label="user">
+              <ion-icon
+                name="person-outline"
+                aria-hidden="true"
+                aria-hidden="true"
+              ></ion-icon>
+            </button>
+
+            <button class="header-action-btn" aria-label="favourite item">
+              <ion-icon
+                name="star-outline"
+                aria-hidden="true"
+                aria-hidden="true"
+              ></ion-icon>
+
+              <span class="btn-badge">+</span>
+            </button>
+            <!-- Not Displayed  -->
+            <button class="header-action-btn" aria-label="cart item">
+              <data class="btn-text" value="0">0.00DH</data>
+              <!-- needs to increment each time a product is added  -->
+              <ion-icon
+                name="bag-handle-outline"
+                aria-hidden="true"
+                aria-hidden="true"
+              ></ion-icon>
+
+              <span class="btn-badge">0</span>
+            </button>
+          </div>
+
+          <nav class="navbar">
+            <ul class="navbar-list">
+              <li>
+                <a href="index.html" class="navbar-link has-after">Home</a>
+              </li>
+
+              <li>
+                <a href="#collection" class="navbar-link has-after"
+                  >Collections</a
+                >
+              </li>
+
+              <li>
+                <a href="#shop" class="navbar-link has-after">Shop</a>
+              </li>
+
+              <li>
+                <a href="#offer" class="navbar-link has-after">Offers</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- 
+      - #MOBILE NAVBAR
+    -->
+
+    <div class="sidebar">
+      <div class="mobile-navbar" data-navbar>
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img
+              src="./assets/newoilcosmetics/Logos/LOGOSMALL.png"
+              width="250"
+              height="30"
+              alt="New-oil-cosmetics"
+            />
+          </a>
+
+          <button
+            class="nav-close-btn"
+            aria-label="close menu"
+            data-nav-toggler
+          >
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#collection" class="navbar-link" data-nav-link
+              >Collections</a
+            >
+          </li>
+
+          <li>
+            <a href="#shop" class="navbar-link" data-nav-link>Shop</a>
+          </li>
+
+          <li>
+            <a href="#offer" class="navbar-link" data-nav-link>Offers</a>
+          </li>
+
+          <!-- <li>
+            <a href="#offer" class="navbar-link has-after">Search product</a>
+          </li> -->
+        </ul>
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+    <div class="child-article-container">
+      <h1 class="header-article">Plus d'infos sur nos huiles</h1>
+      <!-- <h3 class="sm-header-article"></h3> -->
+    </div>
+    <article class="m-a-container">
+      <div class="article-container">
+        <img
+          src="./assets/newoilcosmetics/Argan-gal.jpg"
+          alt="New-oil-cosmetics"
+          width="300px"
+          height="350px"
+        />
+        <!-- change to real infos -->
+        <p class="random-txt">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error atque
+          magnam commodi, assumenda reiciendis dolorum iusto suscipit facere
+          voluptate odit voluptates adipisci s unt unde. Alias obcaecati quae
+          accusantium necessitatibus autem. Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Natus cumque laudantium autem tenetur
+          culpa, dolor repellendus eaque veritatis similique consectetur quia
+          obcaecati aperiam, facere a eligendi dolorem quidem sint omnis.<br />
+        <!-- all buttons should have the add to cart function -->
+          <button class="btn-3 btn-primary">Shop now</button>
+        </p>
+      </div>
+    </article>
+    <article class="m-a-container">
+      <div class="article-container">
+        <img
+          src="./assets/newoilcosmetics/Abricot-gal.jpg"
+          alt="New-oil-cosmetics"
+          width="300px"
+          height="350px"
+        />
+        <!-- change to real infos about products -->
+        <!-- add link to more info ( optional ) -->
+        <p class="random-txt">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error atque magnam commodi,
+          assumenda reiciendis dolorum iusto suscipit facere voluptate odit voluptates adipisci s
+          unt unde. Alias obcaecati quae accusantium necessitatibus autem. Lorem ipsum dolor sit,
+           amet consectetur adipisicing elit. Natus cumque laudantium autem tenetur culpa, dolor 
+           repellendus eaque veritatis similique consectetur quia obcaecati aperiam, facere a eligendi 
+           dolorem quidem sint omnis.
+          <button class="btn-3 btn-primary">Shop now</button>
+        </p>
+      </div>
+    </article>
+    <article class="m-a-container">
+      <div class="article-container">
+        <img
+          src="./assets/newoilcosmetics/amande-gal.jpg"
+          alt="New-oil-cosmetics"
+          width="300px"
+          height="350px"
+        />
+        <!-- change to real infos -->
+        <p class="random-txt">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error atque
+          magnam commodi, assumenda reiciendis dolorum iusto suscipit facere
+          voluptate odit voluptates adipisci s unt unde. Alias obcaecati quae
+          accusantium necessitatibus autem. Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Natus cumque laudantium autem tenetur
+          culpa, dolor repellendus eaque veritatis similique consectetur quia
+          obcaecati aperiam, facere a eligendi dolorem quidem sint omnis.
+          <button class="btn-3 btn-primary">Shop now</button>
+        </p>
+      </div>
+    </article>
+    <article class="m-a-container">
+      <div class="article-container">
+        <img
+          src="./assets/newoilcosmetics/Figue-gal.jpg"
+          alt="New-oil-cosmetics"
+          width="300px"
+          height="350px"
+        />
+        <!-- change to real infos -->
+        <p class="random-txt">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error atque
+          magnam commodi, assumenda reiciendis dolorum iusto suscipit facere
+          voluptate odit voluptates adipisci s unt unde. Alias obcaecati quae
+          accusantium necessitatibus autem. Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Natus cumque laudantium autem tenetur
+          culpa, dolor repellendus eaque veritatis similique consectetur quia
+          obcaecati aperiam, facere a eligendi dolorem quidem sint omnis.
+          <button class="btn-3 btn-primary">Shop now</button>
+        </p>
+      </div>
+    </article>
+    <article class="m-a-container">
+      <div class="article-container">
+        <img
+          src="./assets/newoilcosmetics/Lentisque-gal.jpg"
+          alt="New-oil-cosmetics"
+          width="300px"
+          height="350px"
+        />
+        <!-- change to real infos -->
+        <p class="random-txt">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error atque
+          magnam commodi, assumenda reiciendis dolorum iusto suscipit facere
+          voluptate odit voluptates adipisci s unt unde. Alias obcaecati quae
+          accusantium necessitatibus autem. Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Natus cumque laudantium autem tenetur
+          culpa, dolor repellendus eaque veritatis similique consectetur quia
+          obcaecati aperiam, facere a eligendi dolorem quidem sint omnis.
+          <button class="btn-3 btn-primary">Shop now</button>
+        </p>
+      </div>
+    </article>
+    <article class="m-a-container">
+      <div class="article-container">
+        <img
+          src="./assets/newoilcosmetics/Myrte-gal.jpg"
+          alt="New-oil-cosmetics"
+          width="300px"
+          height="350px"
+        />
+        <!-- change to real infos -->
+        <p class="random-txt">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error atque
+          magnam commodi, assumenda reiciendis dolorum iusto suscipit facere
+          voluptate odit voluptates adipisci s unt unde. Alias obcaecati quae
+          accusantium necessitatibus autem. Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Natus cumque laudantium autem tenetur
+          culpa, dolor repellendus eaque veritatis similique consectetur quia
+          obcaecati aperiam, facere a eligendi dolorem quidem sint omnis.
+          <button class="btn-3 btn-primary">Shop now</button>
+        </p>
+      </div>
+    </article>
+    <article class="m-a-container">
+      <div class="article-container">
+        <img
+          src="./assets/newoilcosmetics/Ricin-gal.jpg"
+          alt="New-oil-cosmetics"
+          width="300px"
+          height="350px"
+        />
+        <!-- change to real infos -->
+        <p class="random-txt">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error atque
+          magnam commodi, assumenda reiciendis dolorum iusto suscipit facere
+          voluptate odit voluptates adipisci s unt unde. Alias obcaecati quae
+          accusantium necessitatibus autem. Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Natus cumque laudantium autem tenetur
+          culpa, dolor repellendus eaque veritatis similique consectetur quia
+          obcaecati aperiam, facere a eligendi dolorem quidem sint omnis.
+          <button class="btn-3 btn-primary">Shop now</button>
+        </p>
+      </div>
+    </article>
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./assets/js/script.js" defer></script>
+  </body>
+  <footer class="footer" data-section>
+    <div class="container">
+      <div class="footer-top">
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">About us</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link"
+              >Hay Adil Rue 9 n° 18, Hay Mohammadi Casablanca – Maroc</a
+            >
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">contact@newoilcosmetics.com</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link"> +212 5 22 60 94 42</a>
+          </li>
+        </ul>
+
+        <div class="footer-list">
+          <p class="newsletter-title">Receive news from us.</p>
+
+          <p class="newsletter-text">
+            Enter your email below to be the first to know about our new
+            collections and product launches.
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input
+              type="email"
+              name="email_address"
+              placeholder="Enter your email address"
+              required
+              class="email-field"
+            />
+
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="wrapper">
+          <p class="copyright">&copy; 2033 Newoilcosmetics</p>
+
+          <ul class="social-list">
+            <li>
+              <a
+                href="https://www.facebook.com/newoilcosmetics/"
+                class="social-link"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/newoilcosmetics/"
+                class="social-link"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="logo">
+          <img
+            src="./assets/newoilcosmetics/Logos/purebrown.png"
+            width="179"
+            height="26"
+            loading="lazy"
+            alt="Glowing"
+          />
+        </a>
+        <img
+          src="./assets/images/pay.png"
+          width="313"
+          height="28"
+          alt="available all payment method"
+          class="w-100"
+        />
+      </div>
+    </div>
+  </footer>
+</html>

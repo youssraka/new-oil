@@ -1,7 +1,12 @@
 'use strict';
-
-
-
+/** 
+ * Search field function
+ */
+const searchInput = document.querySelector('[data-search]')
+searchInput.addEventListener("input" , (e)=> {
+   const value = e.target.value
+   console.log(value)
+})
 /**
  * add event on element
  */
@@ -41,9 +46,25 @@ const closeNavbar = function () {
 }
 
 addEventOnElem(navbarLinks, "click", closeNavbar);
+//search bar
+// function searchBar(){
+//   var input , filter , ul , li , a ,i , txValue ;
+//   input = document.getElementById('search-field');
+//   filter = input.value.toUppercase();
+//   ul = document.getElementById('myUl');
+//   li = document.getElementsByTagName('li');
+//   for (i=0 ; i<li.length ;i++){
+//     a = li[i].getElementsByTagName('a')[0];
+//     txValue= a.textContent || a.innerText;
+//     if (txValue.toUpperCase().indexOf(filter)> -1 ){
+//       li[i].style.display ="";
+//     }else{
+//       li[i].style.display = 'none';
+//     }
+  
+//   }
 
-
-
+// }
 /**
  * header sticky & back top btn active
  */
